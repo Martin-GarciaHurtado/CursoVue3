@@ -1,57 +1,64 @@
 <template>
+
+  <h1 class="my-5">Formularios con Vue.js</h1>
+
   <form @submit.prevent="procesarFormulario">
     <Input :tarea="tarea" />
   </form>
   <hr>
-  <ListaTareas/>
+  <ListaTareas />
 </template>
 
 <script>
-import Input from '@/components/Input.vue'
-import { mapActions } from 'vuex'
-import ListaTareas from '@/components/ListaTareas.vue'
-const shortid = require('shortid');
-// @ is an alias to /src
 
+import Input from '../components/Input'
+import ListaTareas from '../components/ListaTareas'
+import {mapActions} from 'vuex'
+const shortid = require('shortid');
 
 export default {
-  name: 'HomeView',
+  name: 'Home',
+  components: {
+    Input, ListaTareas
+  },
   data() {
     return {
       tarea: {
         id: '',
         nombre: '',
         categorias: [],
-        estado: [],
+        estado: '',
         numero: 0
       }
     }
-  },
-  components: {
-    Input,
-    ListaTareas,
   },
   methods: {
     ...mapActions(['setTareas']),
     procesarFormulario(){
       console.log(this.tarea)
       if(this.tarea.nombre.trim() === ""){
-        console.log('Campo vacio')
+        console.log('Campo vacío')
         return
       }
-      console.log('No esta vacio el campo')
-      
-      this.tarea.id = shortid.generate()
+      console.log('no está vacio')
 
+      // generar id
+      this.tarea.id = shortid.generate()
+      console.log(this.tarea.id)
+      
+      // envian los datos
       this.setTareas(this.tarea)
 
+      // limpiar datos
       this.tarea = {
+        id: '',
         nombre: '',
         categorias: [],
-        estado: [],
+        estado: '',
         numero: 0
       }
     }
-  }
+  },
+
 }
 </script>
