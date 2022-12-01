@@ -1,0 +1,38 @@
+[debug] [2022-12-01T15:05:27.201Z] ----------------------------------------------------------------------
+[debug] [2022-12-01T15:05:27.204Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-01T15:05:27.205Z] CLI Version:   11.16.1
+[debug] [2022-12-01T15:05:27.205Z] Platform:      win32
+[debug] [2022-12-01T15:05:27.205Z] Node Version:  v16.18.1
+[debug] [2022-12-01T15:05:27.207Z] Time:          Thu Dec 01 2022 09:05:27 GMT-0600 (hora estándar central)
+[debug] [2022-12-01T15:05:27.207Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-01T15:05:27.212Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-01T15:05:27.242Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-01T15:05:27.243Z] > authorizing via signed-in user (martingarciahurtado@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\gahm965527\Desktop\Udemy\CursoVue3\CLI\Api-Auth-Firebase
+
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-12-01T15:05:27.458Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-01T15:05:39.084Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-12-01T15:05:39.271Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+[debug] [2022-12-01T15:05:39.451Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+    at RetryOperation._fn (C:\Users\gahm965527\AppData\Roaming\nvm\v16.18.1\node_modules\firebase-tools\lib\apiv2.js:242:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

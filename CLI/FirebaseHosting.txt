@@ -1,0 +1,17 @@
+	ejecutar el comando
+<---------------------------------------> 
+	npm install -g firebase-tools
+
+	Darle en siguiente y ejecutar el siguiente comando
+
+	firebase login --> Logeo de cuanta google
+	firebase init --> Se inicia el hosting 
+
+	seleccionar yes  y despues escoger la primera opcion de hosting
+	seleccionar proyectos existentes y escoger el que se usara
+	directorio publico dist
+
+	sigle page application : y
+	overwrite : N
+
+
