@@ -1,0 +1,103 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style:none;
+	}
+	
+body{
+	background:url(../img/index.jpg);
+	background-position: top center;
+	height:1080px;	
+	}
+	
+/*-------------------------------*/	
+/*-------------------------------*/	
+/*--CABEZOTE--*/
+	
+header{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:83px;
+	background:rgba(255,255,0,.5);
+	}
+	
+/*--FIN CABEZOTE--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--BARRA DE NAVEGACIÓN--*/
+
+nav{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:45px;
+	background:rgba(255,0,0,.5);
+	}
+	
+/*--FIN BARRA DE NAVEGACIÓN--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--SLIDE--*/
+
+#slide{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:301px;
+	background:rgba(0,0,255,.5);
+	}
+	
+/*--FIN SLIDE--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--BOTONERA SLIDE--*/
+
+#botoneraSlide{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:26px;
+	background:rgba(70,255,0,.5);
+	}
+	
+/*--FIN BOTONERA SLIDE--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--SECTION--*/
+
+section{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:299px;
+	background:rgba(0,255,0,.5);
+	}
+	
+/*--FIN SECTION--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--BOTTOM--*/
+
+#bottom{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:190px;
+	background:rgba(0,0,255,.5);
+	}
+	
+/*--FIN BOTTOM--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--FOOTER--*/
+
+footer{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:62px;
+	background:rgba(255,0,0,.5);
+	}
+
